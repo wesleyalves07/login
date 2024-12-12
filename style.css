@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+}
+.container{
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    & .login{
+        display: flex;
+        flex-direction: column;
+        padding: 35px;
+        gap: 26px;
+        border-radius: 10px;
+        border: 0.5px solid #878787;
+        opacity: 0px;
+        & header{
+            display: flex;
+            flex-direction: column;
+           & h1{
+                font-size: 25px;
+                font-weight: 300;
+                line-height: 37.5px;
+                text-align: left;
+                & .subtitle{
+                    gap: 2px;
+                    & h2{
+                        font-size: 31px;
+                        font-weight: 500;
+                        line-height: 46.5px;
+                        text-align: left;
+                    }
+                    & p{
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        text-align: left;
+                        color: #111111;
+                    }
+                }
+            }
+       } 
+    & .form{
+        display: flex;
+        flex-direction: column;
+        gap: 38px;
+        & .email{
+            & input{
+                border-radius: 6px 6px 6px 6px;
+                border: 0.6px solid #282828CC;
+            } 
+            
+        }
+        & .dados{
+            display: flex;
+            flex-direction: column;
+            
+            & .senha{
+                display: flex;
+                border-radius: 6px 6px 6px 6px;
+                border: 0.6px solid #282828CC;
+                & img{
+                    margin-right: 27px;
+                }
+                & #senha{
+                    border: none;
+                }
+            }
+            & label{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: left;
+                color: #111111;
+            }
+            & input{
+                outline: none;
+                width: 100%;
+                padding: 19px 27px;
+                border-radius: 6px 6px 6px 6px;
+                border: 0.6px solid #282828CC;              
+            }
+        }
+        & .lembrar{
+            display: flex;
+            justify-content: space-between;
+            & .checkbox{
+                display: flex;
+                gap: 6px;
+                & p{
+                    font-size: 12px;
+                    font-weight: 300;
+                    line-height: 18px;
+                    text-align: left;
+                }
+            }
+            & p{
+                font-family: Poppins;
+                font-size: 12px;
+                font-weight: 300;
+                line-height: 18px;
+                text-align: left;
+                color: #4D4D4D;
+            }
+        }
+        & .button{
+            padding: 18px;
+            gap: 10px;
+            border-radius: 6px 6px 6px 6px;
+            opacity: 0px;
+            background-color:  #111111;
+            text-align: center;
+            & button{
+                color: #fff;
+                background-color:  #111111;
+                border: none;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                text-align: left;
+
+
+            }
+
+
+        }
+    }
+    }
+}
